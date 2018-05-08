@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="myShades.Pages.MainMenue"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:myShades.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="MainStyle">
+            <Setter Property="FontFamily" Value="OCR a"/>
+            <Setter Property="FontSize" Value="36"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,10"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+    
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Name="MyStackPanel">
+            
+            <TextBlock Style="{StaticResource MainStyle}" 
+                       Name="NewGameButton"
+                       Text="New game"
+                       PointerEntered="TextBlock_PointerEntered"
+                       PointerExited="TextBlock_PointerExited"
+                       Tapped="NewGameButton_Tapped"/>
+            
+            
+            
+            <!--<TextBlock Style="{StaticResource MainStyle}" 
+                       Name="ContinueButton"
+                       Text="Continue"
+                       PointerEntered="TextBlock_PointerEntered"
+                       PointerExited="TextBlock_PointerExited"
+                       Tapped="ContinueButton_Tapped"/>-->
+
+            <TextBlock Style="{StaticResource MainStyle}" 
+                       Name="SetingsButton"
+                       Text="Setings"
+                       PointerEntered="TextBlock_PointerEntered"
+                       PointerExited="TextBlock_PointerExited"
+                       Tapped="SetingsButton_Tapped"/>
+            
+            <!--<StackPanel HorizontalAlignment="Center"
+                Orientation="Horizontal">
+                <Button Tag="1"></Button>
+                <Button Tag="1"></Button>
+                <Button Tag="1"></Button>
+                <Button Tag="1"></Button>
+                <Button ></Button>
+            </StackPanel>-->
+            
+            <TextBlock Style="{StaticResource MainStyle}" 
+                   Name="ExitButton"
+                   Text="Exit"
+                   PointerEntered="TextBlock_PointerEntered"
+                   PointerExited="TextBlock_PointerExited"
+                   Tapped="ExitButton_Tapped"/>
+            <ScrollBar Name="nkn1" Minimum="1" Maximum="10" Width="100" Height="25"/>
+
+
+        </StackPanel>
+    </Grid>
+</Page>

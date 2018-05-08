@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="864db60d-190b-4a09-aa01-91238654b571" name="UMLUseCaseDiagram1" linkedPackageId="e91f7180-ccb6-4bc6-9128-f59150ffe923" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <ownedCommentsInternal>
+    <comment Id="4f02870d-2d53-49eb-a86a-649dd0094844">
+      <elementDefinition Id="66ed6b00-3240-47e1-a920-36b9d4ba65cc" />
+      <body>Доступно лише під час гри </body>
+      <annotatedElements>
+        <useCaseMoniker Id="8486e0a3-cdc3-4b88-a31b-46b02d13fffa" LastKnownName="Здвинути блок в сторону" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="7b53c70b-1ddc-47db-ad61-8acf62077f54">
+      <profileInstance Id="9084a19a-d33a-4a17-a395-76a194995585" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="17699dc3-23bd-425c-a394-ba3c3b94278e">
+      <profileInstance Id="97cf3508-64ae-4f13-99b5-dbdf8b59242f" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="d739ee62-b5cd-45e6-9d60-99f2f5bff4d4" name="Користувач" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2918ee1a-43b1-4a54-a00b-277815e5ce8e" />
+        <targetEnds>
+          <association Id="187eef7c-e483-417d-b3ff-ec54b976ab74" isDerived="false" sourceEndRoleName="Користувач" targetEndRoleName="Здвинути блок в сторону" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8486e0a3-cdc3-4b88-a31b-46b02d13fffa" LastKnownName="Здвинути блок в сторону" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1cae9cc-cc94-4221-95df-b76f408701cf" name="Користувач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e4c3c4f4-d145-415a-bce7-339b3f9ffb10" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="526931b2-9af7-4599-9ea4-d3b994c9a18a" name="Здвинути блок в сторону" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="62fc9167-e225-4e9b-8a99-7fc916a4655f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4e787d1f-736b-46c5-9f7b-1b5083102bdc" />
+          </association>
+          <association Id="814f1a43-09db-4049-8a41-a3f9006e0eca" isDerived="false" sourceEndRoleName="Користувач" targetEndRoleName="Розпочаи нову гру" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e97f3297-c88f-45d1-a2a7-793792109c4a" LastKnownName="Розпочаnти нову гру" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="535681b2-58f5-4134-b5bf-216ae4c6a6aa" name="Користувач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="94c1d5e5-1b42-4e5b-b4f8-c7615e8929aa" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1289c123-2118-4b5c-a18f-48c92517b5ca" name="Розпочаи нову гру" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8c89c5ea-e94e-4e16-9512-429c45841dc6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9cb0fd54-59ee-418b-b202-b0403039a752" />
+          </association>
+          <association Id="18e271ae-6f02-47e4-a65d-51260b187590" isDerived="false" sourceEndRoleName="Користувач" targetEndRoleName="Завершити роботу програми" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4b1ee3f7-f7d7-4a04-8e80-84453ca01cf1" LastKnownName="Завершити роботу програми" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2df1cb36-bc7f-4b39-b55b-fbe376284912" name="Користувач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9662fec3-e2c2-436c-8c35-cbc7d7188225" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f1eb0c74-c473-46c9-a8f9-b4e12148028c" name="Завершити роботу програми" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="f9b1f46c-03f2-4825-bdad-5a81ae132f72" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="17444750-4991-4771-81bd-7c8a6dc7e795" />
+          </association>
+          <association Id="f41f1792-6648-4de8-9dff-3600cb25c1c9" isDerived="false" sourceEndRoleName="Користувач" targetEndRoleName="Повернутися в головне меню" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a850e68d-9ed3-47cf-a199-9b4a82452b3e" LastKnownName="Повернутися в головне меню" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d52e2c43-c9b6-43ba-825a-c6a8af7bec03" name="Користувач" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6e397ce0-6493-4a65-8422-4c7be48e85f6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="efa92405-a571-47d7-b55b-e13fa5adfb2f" name="Повернутися в головне меню" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1c70aed9-ee63-4436-8198-84c9b30eae2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6015d6c0-7060-4ccc-8737-cc1eef7e2dcf" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="e97f3297-c88f-45d1-a2a7-793792109c4a" name="Розпочаnти нову гру" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9ed62541-8d36-41c9-b70e-30f60cefc36e" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8486e0a3-cdc3-4b88-a31b-46b02d13fffa" name="Здвинути блок в сторону" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a064ee43-d416-4f16-928c-e4f381b82712" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="4b1ee3f7-f7d7-4a04-8e80-84453ca01cf1" name="Завершити роботу програми" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e9b552c-b598-4368-b921-96ebe39ffc7f" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a850e68d-9ed3-47cf-a199-9b4a82452b3e" name="Повернутися в головне меню" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="affcd1eb-f8bd-405e-a2ab-11f75368ba36" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="e91f7180-ccb6-4bc6-9128-f59150ffe923" name="ModelingProject1">
+    <elementDefinition Id="d24fd308-902a-4d81-a905-ee69df6ea16a" />
+  </package>
+</useCaseModelRoot>

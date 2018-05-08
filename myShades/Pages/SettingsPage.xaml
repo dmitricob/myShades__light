@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="myShades.Pages.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:myShades.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="MainStyle">
+            <Setter Property="FontFamily" Value="OCR a"/>
+            <Setter Property="FontSize" Value="36"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Margin" Value="0,10"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center">
+            <TextBlock Style="{StaticResource MainStyle}"
+                       Text="Column count"/>
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,0">
+                <RadioButton />
+                <RadioButton />
+                <RadioButton />
+            </StackPanel>
+            <TextBlock Style="{StaticResource MainStyle}"
+                       Text="Shades count"/>
+            <StackPanel Orientation="Horizontal"
+                        Margin="0,0,0,0">   
+                <RadioButton Content="null" />
+                <RadioButton Content=""/>
+            </StackPanel>
+            <TextBlock Style="{StaticResource MainStyle}"
+                       Text="Choose Color"/>
+            <ComboBox Name="ColorsComboBox"
+                      SelectionChanged="ColorsComboBox_SelectionChanged"
+                      Margin="0,0,0,0"/>
+            <TextBlock Style="{StaticResource MainStyle}"
+                       Name="GoBack" 
+                       Text="Go back"
+                       PointerEntered="TextBlock_PointerEntered"
+                       PointerExited="TextBlock_PointerExited" 
+                       Tapped="GoBack_Tapped"/>
+            
+            
+        </StackPanel>
+    </Grid>
+</Page>

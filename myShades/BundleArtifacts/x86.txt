@@ -1,0 +1,2 @@
+MainPackage=C:\Users\dmitr\Documents\Visual Studio 2015\Projects\myShades\myShades\bin\x86\Debug\myShades_1.0.2.0_x86_Debug.appx
+SymbolPackage=C:\Users\dmitr\Documents\Visual Studio 2015\Projects\myShades\myShades\AppPackages\myShades_1.0.2.0_Debug_Test\myShades_1.0.2.0_x86_Debug.appxsym

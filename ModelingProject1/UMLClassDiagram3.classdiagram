@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="bd7b67bf-29c6-4264-a96a-3228ae081e54" name="UMLClassDiagram3" linkedPackageId="33ed49c1-af86-4f01-90e0-8df484f85e2f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="c5abb87b-1d24-419d-8257-889cd00f85a3">
+      <profileInstance Id="f07b56bd-76af-4b5e-a590-46352fc14bf4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="b2d4fbf3-96b1-4704-834f-9a63132ee4e7">
+      <profileInstance Id="005e5fcf-25e7-4614-8a5d-727fbd2f3bdc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5413b938-71e2-4f6b-a8de-61e92f222aad" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="cb3b83c8-2226-4da8-a044-5dd27df57220" />
+        <targetEnds>
+          <association Id="ffa8a374-877c-48ab-acf4-8a0ecc67c89a" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Gradient" isLeaf="false" isAbstract="false">
+            <classMoniker Id="17d2ee68-2150-4834-9af9-2017f3b7f4ed" LastKnownName="Gradient" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="12affb2b-9f8d-4cae-bb74-2924b387a9bc" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fa162473-1fe9-421a-a191-594ec74bcbad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01cbb672-0a0b-44c8-8bd4-6710da2f1bb7" name="Gradient" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7e14475e-c676-40f7-93d1-c49ce90c5b51" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="938acfe0-d190-4c30-b265-a99dfb692050" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="b425e979-8e9b-4018-9fba-9864474632af" name="createBlock" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0e8a508f-e6b2-41ac-9ecf-944371839783" />
+          </operation>
+          <operation Id="56269c0d-a65b-46b8-b5dc-c356d1aa19e2" name="moveCurentAside" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="18c888c8-b7e5-4b5d-a9a2-084f48d39d0b" />
+          </operation>
+          <operation Id="f505f69f-a5ed-4fa3-ab58-936e33835eb0" name="moveDown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b24ea9b4-4d5f-4cf4-8f52-338917818ad2" />
+          </operation>
+          <operation Id="fe3f22fa-22ca-4b3b-8f3f-e3e143e06a76" name="CombineBlocks" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="76e3909a-1efe-49a3-b88c-8f6be46de279" />
+          </operation>
+          <operation Id="54bd47e4-3d4f-42f9-bc26-214060648c8f" name="UpdateRow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="47f53161-043d-46b9-9063-92dde1a5468b" />
+          </operation>
+          <operation Id="14c8fc48-4005-46f3-9ff5-71473c837ec2" name="gameTick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="06415dbd-9280-4ae7-99a2-e55eb05103e9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d59f211b-f750-4add-bf27-020ecf238a1b" name="GamePage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e1539860-f4ec-4ab2-a15d-0ce2930c704f" />
+        <targetEnds>
+          <association Id="1fb5ce18-e559-4621-a86a-310d4146e3cd" isDerived="false" sourceEndRoleName="GamePage" targetEndRoleName="Game" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5413b938-71e2-4f6b-a8de-61e92f222aad" LastKnownName="Game" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43045712-6f8f-46c7-ab7d-b31aeb88dca0" name="GamePage" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5ce59cd2-c5c7-46d7-a87c-37212fb2ab7d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="25758df7-f3ba-4216-85b3-893c2c7f3855" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="59419bc4-af6c-438e-b1fa-530553234788" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="24f54f96-6487-4669-a3ea-22373d028977" />
+          </association>
+        </targetEnds>
+        <ownedOperationsInternal>
+          <operation Id="838820e1-105f-4ec9-8d0a-9df3e303b3be" name="CoreWindow_KeyDown" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c1adbc0-11f6-49a0-8bb6-669a9711d22d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="17d2ee68-2150-4834-9af9-2017f3b7f4ed" name="Gradient" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b6c51ab1-79ec-48a5-9685-1866f33aa17a" />
+        <ownedOperationsInternal>
+          <operation Id="707e95fe-4c13-41be-91df-d4adc4cfb9d2" name="getColorList" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="af6190cd-9733-44e7-a544-7a59bb520194" />
+          </operation>
+          <operation Id="599b645c-f98f-4bfe-b276-cad87f7ad6b7" name="getRandomColorNumber" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f703d30c-1822-4ef2-9813-32351e9d4009" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="33ed49c1-af86-4f01-90e0-8df484f85e2f" name="ModelingProject1">
+    <elementDefinition Id="d24fd308-902a-4d81-a905-ee69df6ea16a" />
+  </package>
+</logicalClassDesignerModel>
